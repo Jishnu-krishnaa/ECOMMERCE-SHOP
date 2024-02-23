@@ -1,0 +1,11 @@
+.carousel slide{
+    height: 10rem;
+    background-size: cover;
+}
+.carousel-inner{
+    height: 40rem;
+}
+
+/* body{
+    color: rgb(241, 241, 49);
+} */

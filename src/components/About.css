@@ -1,0 +1,11 @@
+.heading-about1,.heading-about2,.heading-about3{
+    color: blue;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.About-img1{
+    /* height: 25rem;
+    width: 28rem; */
+    padding-left: 28rem;
+}

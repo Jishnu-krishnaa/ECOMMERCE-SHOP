@@ -1,0 +1,26 @@
+.cust-collect-card1{
+    background-color: #15c01a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2.5rem;
+    margin-left: 1rem  ;
+}
+.cust-collect-card2{
+    background-color: #fd770a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2.5rem;
+    margin-left: 1rem;
+
+
+}
+.cust-collect-card2:hover{
+    background-color: rgb(253, 203, 146);
+
+}
+.cust-collect-card1:hover{
+    background-color: rgb(160, 235, 165);
+
+}

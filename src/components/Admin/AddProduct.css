@@ -1,0 +1,71 @@
+.add-form{
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+}
+.h4-add{
+    font-style: normal;
+  }
+.text-area{
+    height: 6rem;
+}
+.add-body{
+    max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+  padding-top: 20px;
+}
+.add-label1,.add-label2,.add-label3,.add-label4{
+    margin-bottom: 8px;
+}
+.add-check-label{
+    color: rgb(1, 7, 7);
+    text-decoration: solid;
+    margin-bottom: 8px;
+}
+input[type='text'],[type='number'],[type='file']{
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.head-add{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+}
+.add-button{
+    padding: 10px;
+    background-color: #fd770a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-button:hover {
+    background-color: rgb(219, 150, 71);
+  }
+.home-butt-sign{
+  padding-left: 90.5rem;
+}
+.add-select{
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.add-radio{
+  margin-left: 10px;
+
+}
+.lebel-arrival{
+  text-align: left 10px;
+}
+  

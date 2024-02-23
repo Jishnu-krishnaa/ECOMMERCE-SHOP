@@ -1,0 +1,15 @@
+.pro-pic{
+    width: 180px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 50%;
+      border-color: #fd770a;
+      border-style: solid;
+      margin-left: 12rem;
+}
+.name-pro{
+    text-align: center;
+}
+.email-pro{
+    text-align: center;
+}

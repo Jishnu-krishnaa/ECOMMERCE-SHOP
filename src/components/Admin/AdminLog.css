@@ -1,0 +1,65 @@
+.body-Admin{
+    max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.459); 
+}
+.form-Admin{
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2); */
+
+}
+.label-Admin1,.label-Admin2{
+    margin-bottom: 8px;
+}
+.head-Admin{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  
+}
+.head-Admin2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  margin: 0;
+}
+.Admin-button{
+    padding: 10px;
+    background-color: #fd770a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+&:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+.Admin-input1,.Admin-input2{
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.Admin-button:hover {
+    background-color: rgb(219, 150, 71);
+}
+
+.link1-Admin-sign{
+    padding-left: 11rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.admin-desc{
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home-butt-Adm-log{
+    padding-left: 85.5rem;
+}

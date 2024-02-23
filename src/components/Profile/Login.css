@@ -1,0 +1,54 @@
+.body-log{
+    max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.459); 
+}
+.form-log{
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2); */
+
+}
+.label-log1,.label-log2{
+    margin-bottom: 8px;
+}
+.head-log{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  
+}
+.log-button, .sign1-button{
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+&:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+.log-input1,.log-input2{
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.log-button:hover {
+    background-color: rgb(160, 235, 165);
+}
+.link1-sign{
+    padding-left: 11rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.home-butt-log{
+    padding-left: 90.5rem;
+}

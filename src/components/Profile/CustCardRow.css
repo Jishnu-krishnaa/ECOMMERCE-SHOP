@@ -1,0 +1,30 @@
+.cust-homr-Buy{
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2rem;
+    width: 15rem;
+    margin-left: 7.5px;
+
+}
+.cust-homr-cart{
+    background-color: #fd770a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2rem;
+    width: 15rem;
+    margin-left: 7.5px;
+    margin-top: 10px;
+
+
+}
+.cust-homr-cart:hover{
+    background-color: rgb(253, 203, 146);
+
+}
+.cust-homr-Buy:hover{
+    background-color: rgb(160, 235, 165);
+
+}

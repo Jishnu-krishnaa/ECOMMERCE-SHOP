@@ -1,0 +1,35 @@
+.cust-home-Buy{
+    background-color: #15c01a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2.5rem;
+    margin-left: 1rem  ;
+}
+.view-product-butt{
+    background-color: #fd770a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2rem;
+    width: 15rem;
+    margin-left: -1.6em;
+    margin-top: 10px;
+
+}
+.view-product-butt:hover{
+    background-color: rgb(253, 203, 146);
+
+}
+.buy-product-butt{
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2rem;
+    width: 15rem;
+    margin-left: -1.6em;
+}
+.buy-product-butt:hover{
+    background-color: rgb(160, 235, 165);
+}

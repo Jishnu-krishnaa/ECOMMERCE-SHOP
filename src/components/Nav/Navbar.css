@@ -1,0 +1,49 @@
+.logo-nav{
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+header{
+    height: 15rem;
+    position: fixed;
+    width: 100%;
+}
+input[type='search']{
+    width: 25rem;
+}
+
+.nav-About,.nav-arrival{
+    padding-left: 3.5rem;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav-log-sig{
+    padding-right: 1.5rem;
+    font-family: fantasy;
+    font-size: larger;
+    
+    
+}
+.nav-catagory{
+    padding-left: 3.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+.nav-Home{
+    padding-left: 3rem;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+}
+.d-flex{
+    padding-right: 2rem;
+    height: 40px;
+}
+.nav-logoutt{
+    left: 10px;
+}
+.nav-Home,.nav-catagory,.nav-arrival,.nav-profiles,.nav-About{
+    font-size: 1.7rem;
+
+}
+.nav-Home:hover,.nav-catagory:hover,.nav-arrival:hover,.nav-profiles:hover,.nav-About:hover,.nav-log-sig:hover{
+    opacity: 0.5;
+}
