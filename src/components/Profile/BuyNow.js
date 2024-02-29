@@ -40,7 +40,7 @@ const BuyNowItem = () => {
     .catch((error)=>{
       console.log('error occured:', error)
     })
-  },[]);
+  },[id]);
 
   const SaveAddress = () => {
     axios.post('http://localhost:3001/ecommerce/SetDeliveryAddress',DeliveryAddress)
@@ -54,19 +54,8 @@ const BuyNowItem = () => {
 }
 
 const PlaceOrder = () => {
-//   axios.post(`http://localhost:3001/ecommerce/ViewAddressbyId/${address}`)
-//   .then((result) => {
-//       console.log("Address inserted", result)
-//       if(result.status===200){
-//           alert("Press Okay to Confirm this order")
-//           navigate(`/PlacedOrder/${address}`)
-//       }
-//       else{
-//           alert('Registering Failed')
-//       }
-//   }).catch((err) => {
-//       console.log("error",err)
-//   });
+  alert("ORDER PLACED SUCCESS. Press 'Okay' to continue Shopping")
+  navigate('/CustHome')
 }
 
   return (

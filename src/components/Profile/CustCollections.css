@@ -1,18 +1,21 @@
 .cust-collect-card1{
-    background-color: #15c01a;
+    background-color: #4caf50;
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    height: 2.5rem;
-    margin-left: 1rem  ;
+    height: 2rem;
+    width: 15rem;   
+    margin-left: 2.4rem;
 }
 .cust-collect-card2{
     background-color: #fd770a;
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    height: 2.5rem;
-    margin-left: 1rem;
+    height: 2rem;
+    width: 15rem;
+    margin-left: 2.4rem;
+    margin-top: 10px;
 
 
 }
@@ -23,4 +26,10 @@
 .cust-collect-card1:hover{
     background-color: rgb(160, 235, 165);
 
+}
+.card-body-lolita{
+    padding-right: -1rem;
+}
+.product-card-3{
+    height: 30rem;
 }

@@ -6,7 +6,7 @@ const ProductCard = ({ product, ProductDeleted }) => {
     axios.get(`http://localhost:3001/ecommerce/DeleteProduct/${product._id}`)
       .then((response) => {
         if (response.status === 200) {
-          alert('Product deleted Successfully')
+          alert('Product deleted Successfully') 
           window.location.reload();
           console.log(response.data);
           if (ProductDeleted) {
@@ -21,20 +21,23 @@ const ProductCard = ({ product, ProductDeleted }) => {
       });
   };
   return (
-    <div className="product-card">
+    <div>
+      <div className="product-card">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <div class="card">
         <img src={`http://localhost:3001/${product.pic.filename}`} class="card-img-top" alt={product.name} />
-        <div class="card-body"><ul>
+        <div class="card-body-pro"><ul>
         <li><label className="label-prod1"><b>Name :  </b>{product.name}</label><br/></li>
         <li><label className="label-prod2"><b>Price : </b>₹{product.price}</label><br/></li>
         <li><label className="label-prod3"><b>Catagory : </b>{product.catagory}</label><br/></li>
-        <li><label className="label-prod4"><b>Trends : </b>{product.trend}</label><br/></li></ul>
-        <label className="label-prod5"><b>Description : </b>{product.desc}</label><br/><br/>
-        <button className="delete-button" onClick={handleDelete}>Remove</button><br/>
+        <li><label className="label-prod4"><b>Trends : </b>{product.trend}</label><br/></li>
+        <label className="label-prod5"><li><b>Description : </b></li>{product.desc}</label></ul><br/>
+        <button className="delete-button" onClick={handleDelete}>Remove</button><br/><br/><br/>
         </div>
         </div>
       </ul><br/><br/> <br/><br/>
+      <br/>
+    </div><br/><br/>
     </div>
   );
 };

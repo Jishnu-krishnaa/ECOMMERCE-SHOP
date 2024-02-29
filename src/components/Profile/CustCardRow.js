@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const CustCardRow = ({ product, user, ProductAdded }) => {
-  const navigate = useNavigate();
+  const navigate = useNavigate();      
 
 
 const addToCart = (Id) => {
@@ -48,19 +48,19 @@ const addToCart = (Id) => {
         alert("Something went wrong")
       });
 }
-  return (
+  return ( 
     <div className="RowPost-card">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <div class="card"> 
-      <img src={`http://localhost:3001/${product.pic.filename}`} class="card-img-top" alt={product.name} />
-      <div class="card-body"><ul>
+      <img src={`http://localhost:3001/${product.pic.filename}`} class="card-img-top" alt={product.name} /><br/>
+      <div class="card-body-rwcr"><ul>
       <li><label className="label-prod1"><b>Name :  </b>{product.name}</label><br/></li>
       <li><label className="label-prod2"><b>Price : </b>₹{product.price}</label><br/></li>
       <li><label className="label-prod3"><b>Catagory : </b>{product.catagory}</label><br/></li>
       <li><label className="label-prod4"><b>Trends : </b>{product.trend}</label><br/></li>
       <li><label className="label-prod5"><b>Description : </b>{product.desc}</label><br/><br/></li></ul>
       <button className='cust-homr-Buy' onClick={()=>{handleBuyNow(product._id)}}>BUY NOW</button><br/>
-    <button className="cust-homr-cart" onClick={()=>addToCart(product._id)}>ADD CART</button><br/>
+    <button className="cust-homr-cart" onClick={()=>addToCart(product._id)}>ADD CART</button><br/><br/><br/>
       </div>
       </div>
     </ul><br/><br/>

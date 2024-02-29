@@ -1,8 +1,11 @@
 import React from 'react'
 import './CustCollections.css'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
 const CardCustCollections = ({product, user, ProductAdded }) => {
+  const navigate = useNavigate();
+
   const addToCart = (Id) => {
     console.log("PId",Id)
   
@@ -27,22 +30,42 @@ const CardCustCollections = ({product, user, ProductAdded }) => {
         console.error('Error adding product to cart:', error);
       });
     }
+
+    const handleBuyNow =(stockid)=>{
+      axios.post(`http://localhost:3001/ecommerce/BuyNowOrder/${stockid}`)
+      .then((response) => {
+          if (response.status === 200) {
+            console.log(response.data);
+            navigate(`/BuyNow/${stockid}`)
+          } else {
+            console.error('Order Failed:', response.data);
+            alert("Something went wrong")
+          }
+        })
+        .catch((error) => {
+          console.error('Failed:', error);
+          alert("Something went wrong")
+        });
+  }
+
   return (
-      <div className="product-card">
+      <div>
+      <div className="product-card-3">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <div class="card">
         <img src={`http://localhost:3001/${product.pic.filename}`} class="card-img-top" alt={product.name} />
-        <div class="card-body"><ul>
+        <div class="card-body-lolita"><ul>
         <li><label className="label-prod1"><b>Name :  </b>{product.name}</label><br/></li>
         <li><label className="label-prod2"><b>Price : </b>₹{product.price}</label><br/></li>
         <li><label className="label-prod3"><b>Catagory : </b>{product.catagory}</label><br/></li>
         <li><label className="label-prod4"><b>New Arrivals : </b>{product.arrival}</label><br/></li>
         <li><label className="label-prod5"><b>Description : </b>{product.desc}</label><br/><br/></li></ul>
-        <button className="cust-collect-card1" >BUY NOW</button>
-        <button className="cust-collect-card2" onClick={()=>addToCart(product._id)}>ADD CART</button><br/>
+        <button className="cust-collect-card1"  onClick={()=>{handleBuyNow(product._id)}}>BUY NOW</button>
+        <button className="cust-collect-card2" onClick={()=>addToCart(product._id)}>ADD CART</button><br/><br/><br/>
         </div>
         </div>
       </ul><br/><br/>
+      </div><br/>
     </div>
   )
 }

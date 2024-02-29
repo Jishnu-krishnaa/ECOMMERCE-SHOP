@@ -2,7 +2,11 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import CardCustCollections from './CardCustCollections';
 import CustNavbar from '../Nav/CustNavbar';
+
+
 const CustCollections = () => {
+
+
   const [products1, setProducts1] = useState([]);
   const [products2, setProducts2] = useState([]);
   const [products3, setProducts3] = useState([]);
@@ -48,10 +52,8 @@ const CustCollections = () => {
       .catch((error) => {
         console.log("Error fetching users:", error);
       });
-
-      
-
   }, []);
+  
   
 
   return (

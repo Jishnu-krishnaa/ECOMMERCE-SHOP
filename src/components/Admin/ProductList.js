@@ -64,7 +64,7 @@ const ProductList = () => {
       <div className='cata-part1'>
       <header><h2 className='head-prod1' >Men Collections</h2></header><br/><br/><br/><br/>
       <div className="product-card-container row" >
-        {products1.map((product) => (
+        {products1.map((product) => ( 
           <div class='col-3'>
           <ProductCard key={product._id} product={product} />
       </div>

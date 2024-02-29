@@ -22,7 +22,6 @@ import Cart from './components/Profile/Cart';
 import CustCatagories from './components/Profile/CustCollections';
 import CustCollections from './components/Profile/CustCollections';
 import BuyNow from './components/Profile/BuyNow';
-import PlacedOrder from './components/Profile/PlacedOrder';
 
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
       <Route path='/CustCatagories' element={<CustCatagories/>} />
       <Route path='/CustCollections' element={<CustCollections/>} />
       <Route path='/BuyNow/:stockid' element={<BuyNow/>} />
-      <Route path='/PlacedOrder' element={<PlacedOrder/>} />
 
 
     </Routes> 

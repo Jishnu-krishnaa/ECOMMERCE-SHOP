@@ -52,35 +52,41 @@ function CartProducts() {
           });
     }
     return (
-        <div className='body-list'>
+        <div>
             <CustNavbar /><br />
             <div className='cata-part1'>
-                <header><h2 className='head-prod1'>My CART</h2></header><br /><br /><br /><br />
-                <div className="product-card-container row" >
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <header><h2 className='head-prod1'>CART ITEMS</h2></header><br /><br /><br /><br />
+              
+                    <ul>
                         {cartProducts.map((cartProduct) => (
-                            <div className='col-3' key={cartProduct._id}>
-                                <li>
-                                    <div className="card">
-                                        <img src={`http://localhost:3001/${cartProduct.productId.pic.filename}`} className="card-img-top" alt={cartProduct.name} />
-                                        <div className="card-body">
-                                            <ul>
-                                                <li><label className="label-prod1"><b>Name :  </b>{cartProduct.productId.name}</label><br /></li>
-                                                <li><label className="label-prod2"><b>Price : </b>₹{cartProduct.productId.price}</label><br /></li>
-                                                <li><label className="label-prod3"><b>Category : </b>{cartProduct.productId.category}</label><br /></li>
-                                                <li><label className="label-prod4"><b>Trends : </b>{cartProduct.productId.trend}</label><br /></li>
-                                                <li><label className="label-prod5"><b>Description : </b>{cartProduct.productId.desc}</label><br /><br /></li>
-                                                <button className='buy-product-butt' onClick={()=>{handleBuyNow(cartProduct.productId._id)}}>BUY NOW</button><br/>
-                                                <button className='view-product-butt' onClick={()=>{removeCartItem(cartProduct._id)}}>REMOVE</button><br/><br/>
-
-                                            </ul>  
+                            <div key={cartProduct._id}>
+                                <div class="card mb-5">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src={`http://localhost:3001/${cartProduct.productId.pic.filename}`} class="img-fluid rounded-start" alt={cartProduct.name}/>
                                     </div>
-                                    </div><br/><br/>
-                                </li>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    
+                                        <label className="label-prod1"><b>Name :  </b>{cartProduct.productId.name}</label><br /><br />
+                                        <label className="label-prod2"><b>Price : </b>₹{cartProduct.productId.price}</label><br /><br />
+                                        <label className="label-prod3"><b>Category : </b>{cartProduct.productId.category}</label><br /><br />
+                                        <label className="label-prod4"><b>Trends : </b>{cartProduct.productId.trend}</label><br /><br />
+                                        <label className="label-prod5"><b>Description : </b>{cartProduct.productId.desc}</label><br /><br /><br />
+                                        <button className='buy-product-butt' onClick={()=>{handleBuyNow(cartProduct.productId._id)}}>BUY NOW</button><br/>
+                                        <button className='view-product-butt' onClick={()=>{removeCartItem(cartProduct._id)}}>REMOVE</button><br/><br/>
+                                      
+                                    </p>
+                                </div>
+                                </div>
                             </div>
+                          </div>
+
+                        </div>
                         ))}
-                        </ul>
-                </div>
+                    </ul>
+                
             </div>
            
         </div>

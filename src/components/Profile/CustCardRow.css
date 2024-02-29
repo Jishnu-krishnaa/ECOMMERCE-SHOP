@@ -4,8 +4,8 @@
     border-radius: 4px;
     cursor: pointer;
     height: 2rem;
-    width: 15rem;
-    margin-left: 7.5px;
+    width: 15rem;   
+    margin-left: 2.4rem;
 
 }
 .cust-homr-cart{
@@ -15,7 +15,7 @@
     cursor: pointer;
     height: 2rem;
     width: 15rem;
-    margin-left: 7.5px;
+    margin-left: 2.4rem;
     margin-top: 10px;
 
 
@@ -27,4 +27,7 @@
 .cust-homr-Buy:hover{
     background-color: rgb(160, 235, 165);
 
+}
+.card-body-rwcr{
+    padding-right: -1rem;
 }

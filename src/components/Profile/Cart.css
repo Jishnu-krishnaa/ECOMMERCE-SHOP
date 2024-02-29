@@ -1,20 +1,13 @@
-.cust-home-Buy{
-    background-color: #15c01a;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    height: 2.5rem;
-    margin-left: 1rem  ;
-}
+
 .view-product-butt{
     background-color: #fd770a;
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    height: 2rem;
+    height: 2.5rem;
     width: 15rem;
     margin-left: -1.6em;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 .view-product-butt:hover{
@@ -26,10 +19,29 @@
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    height: 2rem;
+    height: 2.5rem;
     width: 15rem;
     margin-left: -1.6em;
 }
 .buy-product-butt:hover{
     background-color: rgb(160, 235, 165);
+}
+/* .rounded mx-auto d-block{
+    max-width: 10rem;
+    height: 5rem;
+}
+.product-card-container{
+    max-width: 50rem;
+} */
+
+.mb-5{
+ width: 50rem;
+ height: 28rem;
+}
+.card-body{
+    padding-left: 6rem;
+}
+.rounded-start{
+    padding-top: 3rem
+    
 }

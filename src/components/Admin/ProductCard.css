@@ -1,5 +1,5 @@
 .card{
-    width: 18rem;
+    width: 20rem;
     max-height: 40rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
@@ -18,8 +18,8 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .product-card{
-    max-height: 28rem;
-
+    height: 29rem;
+    width: 9rem;
 }
 .delete-button{
     width: 14rem;
@@ -33,4 +33,6 @@
 .delete-button:hover {
     background-color: rgb(219, 150, 71);
   }
-  
+.card-body-pro{
+    margin-right: 5rem;
+}

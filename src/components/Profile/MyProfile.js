@@ -19,19 +19,21 @@ function MyProfile() {
       .catch((error) => {
         console.log("Error fetching users:", error);
       });
-  }, []);
+  });
   return (
     <div>
       <CustNavbar/>
       <div className="profile-container">
         <h1 className='profile-header'>PROFILE</h1><br/><br/>
-       <h2>Hey {user.name}</h2><br/><br/>
-       <div class="card-body">
-        <h5>Contact Info</h5>
-          Email : {user.email}<br/>
-          Phone : {user.phone}<br/>
-          Gender : {user.gender}<br/>
-          Age : {user.age}<br/>
+       <h2 className='pro-name'><b>WELCOME, {user.name}</b></h2><br/><br/><br/><br/>
+       <div class="card-body"> 
+        <h5 className='pro-Contact'>CUSTOMER DETAILS</h5>
+        <div className='pro-detail'>
+          <label>Email : </label>{user.email}<br/> 
+          <label>Phone : </label>{user.phone}<br/>
+          <label>Gender : </label>{user.gender}<br/>
+          <label> Age : </label>{user.age}<br/>
+        </div>
         </div>
     </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
